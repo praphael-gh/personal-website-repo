@@ -1,4 +1,5 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+let titleHover = document.getElementById("titleHover");
 
-document.querySelector("body").appendChild(h2);
+titleHover.addEventListener("mouseover", function(event) {
+    event.target,this.style.color = "purple"
+})
